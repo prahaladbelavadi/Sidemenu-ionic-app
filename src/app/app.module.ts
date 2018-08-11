@@ -5,10 +5,6 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-<<<<<<< HEAD
-import { HelloWorldPage } from '../pages/HelloWorld/HelloWorld'
-=======
->>>>>>> parent of 4c07c8d... create pages
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,12 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-<<<<<<< HEAD
     ListPage,
-    HelloWorldPage
-=======
-    ListPage
->>>>>>> parent of 4c07c8d... create pages
   ],
   imports: [
     BrowserModule,
@@ -32,12 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-<<<<<<< HEAD
     ListPage,
-    HelloWorldPage
-=======
-    ListPage
->>>>>>> parent of 4c07c8d... create pages
   ],
   providers: [
     StatusBar,
