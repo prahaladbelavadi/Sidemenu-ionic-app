@@ -22,25 +22,48 @@ export class Page2Page {
     const actionSheet = this.actionSheetCtrl.create({
       title: 'Modify your album',
       buttons: [
-        {
-          text: 'Destructive',
-          role: 'destructive',
-          handler: ()=>{
-            console.log('Destructive Clicked!');
-          }
-        },{
-          text: 'Archive',
-          handler: ()=>{
-            console.log('Archive Clicked');
-          }
-        },{
-          text: 'Cancel',
-          role: 'cancel',
-          handler: ()=> {
-            console.log('Cancel Clicked');
-          }
-        }
-      ]
+                {
+                  text: 'Delete',
+                  role: 'destructive',
+                  icon: 'trash',
+                  color: 'danger',
+                  handler: () => {
+                    console.log('Delete clicked');
+                  }
+                },
+                {
+                  text: 'Share',
+                  icon: 'share',
+                  handler: () => {
+                    console.log('Share clicked');
+                  }
+                },
+                {
+                  text: 'Play',
+                  icon: 'arrow-dropright-circle',
+                  color: 'secondary',
+                  handler: () => {
+                    console.log('Play clicked');
+                  }
+                },
+                {
+                  text: 'Favorite',
+                  icon: 'heart-outline',
+                  color: 'dark',
+                  handler: () => {
+                    console.log('Favorite clicked');
+                  }
+                },
+                {
+                  text: 'Cancel',
+                  role: 'cancel', // will always sort to be on the bottom
+                  icon: 'close',
+                  color: 'danger',
+                  handler: () => {
+                    console.log('Cancel clicked');
+                  }
+                }
+            ]
     });
     actionSheet.present()
   }
