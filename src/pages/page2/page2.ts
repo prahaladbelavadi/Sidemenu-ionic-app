@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ActionSheetController } from 'ionic-angular';
 
 /**
  * Generated class for the Page2Page page.
@@ -15,7 +15,34 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Page2Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public actionSheetCtrl: ActionSheetController) {
+  }
+
+  openActionSheet(){
+    const actionSheet = this.actionSheetCtrl.create({
+      title: 'Modify your album',
+      buttons: [
+        {
+          text: 'Destructive',
+          role: 'destructive',
+          handler: ()=>{
+            console.log('Destructive Clicked!');
+          }
+        },{
+          text: 'Archive',
+          handler: ()=>{
+            console.log('Archive Clicked');
+          }
+        },{
+          text: 'Cancel',
+          role: 'cancel',
+          handler: ()=> {
+            console.log('Cancel Clicked');
+          }
+        }
+      ]
+    });
+    actionSheet.present()
   }
 
   ionViewDidLoad() {
