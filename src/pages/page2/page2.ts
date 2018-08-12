@@ -18,6 +18,27 @@ export class Page2Page {
   constructor(public navCtrl: NavController, public navParams: NavParams, public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
   }
 
+openConfirmationAlert(){
+  const confirmAlert = this.alertCtrl.create({
+    title: 'Terms and Conditions',
+    message: 'Do you agree to terms and conditions?',
+    buttons: [
+      {
+        text: 'Agree',
+        handler: ()=>{
+          console.log('Client Agrees')
+        }
+      },{
+        text: 'Disagree',
+        handler: ()=>{
+          console.log('Client Disagrees')
+        }
+      }
+    ]
+  });
+  confirmAlert.present();
+}
+
 openPrompt(){
   const prompt = this.alertCtrl.create({
     title: 'Login',
