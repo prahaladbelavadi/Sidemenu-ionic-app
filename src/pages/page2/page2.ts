@@ -18,6 +18,61 @@ export class Page2Page {
   constructor(public navCtrl: NavController, public navParams: NavParams, public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
   }
 
+openCheckboxAlert(){
+  const checkAlert = this.alertCtrl.create();
+  checkAlert.setTitle('Pick Pizza toppings');
+
+  checkAlert.addInput({
+    type: 'checkbox',
+    label: 'pepperoni',
+    value: 'pepperoni'
+  });
+
+  checkAlert.addInput({
+    type: 'checkbox',
+    label: 'cheese',
+    value: 'cheese',
+    checked: true
+  });
+
+  checkAlert.addInput({
+    type: 'checkbox',
+    label: 'mushrooms',
+    value: 'mushrooms',
+    checked: true
+  });
+
+  checkAlert.addInput({
+    type: 'checkbox',
+    label: 'olives',
+    value: 'olives',
+    checked: true
+  });
+
+  checkAlert.addInput({
+    type: 'checkbox',
+    label: 'pineapples',
+    value: 'pineapples'
+  });
+
+  checkAlert.addButton({
+    text: 'Cancel',
+    role: 'cancel',
+    handler: ()=>{
+      console.log('Cancel button clicked')
+    }
+  });
+  checkAlert.addButton({
+    text: 'Fire away!',
+    handler: (data) =>{
+      console.log("Toppings picked: ", data)
+    }
+  })
+
+    checkAlert.present();
+
+}
+
 openRadioAlert(){
   const radioAlert = this.alertCtrl.create();
   radioAlert.setTitle('Choose your drink')
