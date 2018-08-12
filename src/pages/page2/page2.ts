@@ -21,11 +21,15 @@ export class Page2Page {
 openPrompt(){
   const prompt = this.alertCtrl.create({
     title: 'Login',
-    message: 'Enter your name',
+    message: 'Enter your Login information',
     inputs: [
       {
-        name: 'name',
+        name: 'user_name',
         placeholder: 'John Doe'
+      },
+      {
+        password: 'password',
+        placeholder: 'UltraMega_S3cr3t_P@ssw0rd'
       }
     ],
     buttons: [
@@ -35,9 +39,9 @@ openPrompt(){
           console.log('Cancel Clicked')
         }
       },{
-        text: 'Save',
+        text: 'Login',
         handler: ()=>{
-          console.log('Save clicked')
+          console.log('Login clicked')
         }
       }
     ]
