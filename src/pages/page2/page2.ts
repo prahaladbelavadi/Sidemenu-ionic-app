@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ActionSheetController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ActionSheetController, AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the Page2Page page.
@@ -15,7 +15,16 @@ import { IonicPage, NavController, NavParams, ActionSheetController } from 'ioni
 })
 export class Page2Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public actionSheetCtrl: ActionSheetController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
+  }
+
+  openBasicAlert(){
+    const alert = this.alertCtrl.create({
+      title: 'New Friend',
+      subTitle: 'Your friend XYZ just accepted your friend request!',
+      buttons: ['OK']
+    });
+    alert.present()
   }
 
   openActionSheet(){
