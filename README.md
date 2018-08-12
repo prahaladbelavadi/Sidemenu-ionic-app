@@ -12,3 +12,4 @@ Reference:
 
 #### Must learn:
 - https://ionicthemes.com/tutorials/about/forms-and-validation-in-ionic
+- https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
