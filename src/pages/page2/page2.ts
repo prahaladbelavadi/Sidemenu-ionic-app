@@ -18,6 +18,33 @@ export class Page2Page {
   constructor(public navCtrl: NavController, public navParams: NavParams, public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
   }
 
+openPrompt(){
+  const prompt = this.alertCtrl.create({
+    title: 'Login',
+    message: 'Enter your name',
+    inputs: [
+      {
+        name: 'name',
+        placeholder: 'John Doe'
+      }
+    ],
+    buttons: [
+      {
+        text: 'Cancel',
+        handler: ()=>{
+          console.log('Cancel Clicked')
+        }
+      },{
+        text: 'Save',
+        handler: ()=>{
+          console.log('Save clicked')
+        }
+      }
+    ]
+  });
+  prompt.present()
+}
+
   openBasicAlert(){
     const alert = this.alertCtrl.create({
       title: 'New Friend',
