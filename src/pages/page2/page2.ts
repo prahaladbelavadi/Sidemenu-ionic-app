@@ -139,7 +139,6 @@ openPrompt(){
                   text: 'Delete',
                   role: 'destructive',
                   icon: 'trash',
-                  color: 'danger',
                   handler: () => {
                     console.log('Delete clicked');
                   }
@@ -154,7 +153,6 @@ openPrompt(){
                 {
                   text: 'Play',
                   icon: 'arrow-dropright-circle',
-                  color: 'secondary',
                   handler: () => {
                     console.log('Play clicked');
                   }
@@ -162,7 +160,6 @@ openPrompt(){
                 {
                   text: 'Favorite',
                   icon: 'heart-outline',
-                  color: 'dark',
                   handler: () => {
                     console.log('Favorite clicked');
                   }
@@ -171,7 +168,6 @@ openPrompt(){
                   text: 'Cancel',
                   role: 'cancel', // will always sort to be on the bottom
                   icon: 'close',
-                  color: 'danger',
                   handler: () => {
                     console.log('Cancel clicked');
                   }
