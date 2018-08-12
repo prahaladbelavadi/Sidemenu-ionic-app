@@ -121,7 +121,6 @@ openRadioAlert(){
     }
   });
   radioAlert.present().then(()=>{
-    this.testRadioOpen = true;
   });
 }
 
@@ -156,7 +155,7 @@ openPrompt(){
         placeholder: 'John Doe'
       },
       {
-        password: 'password',
+        name: 'password',
         placeholder: 'UltraMega_S3cr3t_P@ssw0rd'
       }
     ],
