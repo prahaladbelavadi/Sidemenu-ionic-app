@@ -26,7 +26,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
       { title: 'Buttons', component: Page1Page },
-      { title: 'Action Item', component: Page2Page }
+      { title: 'Alerts!', component: Page2Page }
     ];
 
   }
