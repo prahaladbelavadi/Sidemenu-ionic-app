@@ -18,6 +18,58 @@ export class Page2Page {
   constructor(public navCtrl: NavController, public navParams: NavParams, public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
   }
 
+openRadioAlert(){
+  const radioAlert = this.alertCtrl.create();
+  radioAlert.setTitle('Choose your drink')
+  radioAlert.addInput({
+    type:'radio',
+    label:'Coke',
+    value: 'coke',
+    checked: true
+  });
+
+  radioAlert.addInput({
+    type: 'radio',
+    label: 'Sprite',
+    value: 'sprite'
+  });
+
+  radioAlert.addInput({
+    type: 'radio',
+    label: 'Fanta',
+    value: 'fanta'
+  });
+
+  radioAlert.addInput({
+    type: 'radio',
+    label: 'Root beer',
+    value: 'rootBeer'
+  });
+
+  radioAlert.addInput({
+    type: 'radio',
+    label: 'Dr Pepper',
+    value: 'drPepper'
+  });
+
+  radioAlert.addInput({
+    type: 'radio',
+    label: 'Bloody Mary',
+    value: 'bloodyMary'
+  });
+
+  radioAlert.addButton('Cancel');
+  radioAlert.addButton({
+    text: 'Ok',
+    handler: (data) =>{
+      console.log(data," was selected! ")
+    }
+  });
+  radioAlert.present().then(()=>{
+    this.testRadioOpen = true;
+  });
+}
+
 openConfirmationAlert(){
   const confirmAlert = this.alertCtrl.create({
     title: 'Terms and Conditions',
