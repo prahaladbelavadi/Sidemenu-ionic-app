@@ -15,7 +15,7 @@ import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 })
 export class Page4Page {
 
-  pet: string = 'puppies';
+  pet: string = 'pup';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
