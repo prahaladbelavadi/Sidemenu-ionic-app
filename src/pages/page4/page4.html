@@ -9,11 +9,70 @@
     <button ion-button rounded menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Segment: With static Lists </ion-title>
+    <ion-title> Segment: With static Lists </ion-title>
   </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="puppies">
+        Puppies
+      </ion-segment-button>
+
+      <ion-segment-button value="kittens">
+        Kittens
+      </ion-segment-button>
+
+      <ion-segment-button value="ducklings">
+        Ducklings
+      </ion-segment-button>
+
+    </ion-segment>
+  </ion-toolbar>
+
 </ion-header>
 
-
 <ion-content padding>
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="puppies">
 
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="" alt="">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="" alt="">
+        </ion-thumbnail>
+        <h2>Oscar</h2>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="" alt="">
+        </ion-thumbnail>
+        <h2>Zoey</h2>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="" alt="">
+        </ion-thumbnail>
+        <h2>Otto</h2>
+      </ion-item>
+
+
+<!--
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="" alt="">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item> -->
+
+
+    </ion-list>
+  </div>
 </ion-content>
