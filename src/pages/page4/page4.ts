@@ -16,10 +16,8 @@ import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 export class Page4Page {
 
   pet: string = 'puppies';
-  isAndroid: boolean = false;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, platform: Platform) {
-    this.isAndroid = platform.is('android');
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
