@@ -14,15 +14,15 @@
 
   <ion-toolbar no-border-top>
     <ion-segment [(ngModel)]="pet">
-      <ion-segment-button value="puppies">
+      <ion-segment-button value="pup">
         Puppies
       </ion-segment-button>
 
-      <ion-segment-button value="kittens">
+      <ion-segment-button value="kit">
         Kittens
       </ion-segment-button>
 
-      <ion-segment-button value="ducklings">
+      <ion-segment-button value="duck">
         Ducklings
       </ion-segment-button>
 
@@ -33,32 +33,32 @@
 
 <ion-content padding>
   <div [ngSwitch]="pet">
-    <ion-list *ngSwitchCase="puppies">
+    <ion-list *ngSwitchCase="pup">
 
       <ion-item>
         <ion-thumbnail item-start>
-          <img src="assets/imgs/puppies/thumbnail-puppy-1.jpg" alt="pup">
+          <img src="assets/imgs/puppies/thumbnail-puppy-1.jpg" alt="pupper">
         </ion-thumbnail>
         <h2>Ruby</h2>
       </ion-item>
 
       <ion-item>
         <ion-thumbnail item-start>
-          <img src="assets/imgs/puppies/thumbnail-puppy-2.jpg" alt="pup">
+          <img src="assets/imgs/puppies/thumbnail-puppy-2.jpg" alt="pupper">
         </ion-thumbnail>
         <h2>Oscar</h2>
       </ion-item>
 
       <ion-item>
         <ion-thumbnail item-start>
-          <img src="assets/imgs/puppies/thumbnail-puppy-3.jpg" alt="pup">
+          <img src="assets/imgs/puppies/thumbnail-puppy-3.jpg" alt="pupper">
         </ion-thumbnail>
         <h2>Zoey</h2>
       </ion-item>
 
       <ion-item>
         <ion-thumbnail item-start>
-          <img src="assets/imgs/puppies/thumbnail-puppy-4.jpg" alt="pup">
+          <img src="assets/imgs/puppies/thumbnail-puppy-4.jpg" alt="pupper">
         </ion-thumbnail>
         <h2>Otto</h2>
       </ion-item>
@@ -66,7 +66,7 @@
     </ion-list>
 <!--  -->
 
-<ion-list *ngSwitchCase="kittens">
+<ion-list *ngSwitchCase="kit">
 
   <ion-item>
     <ion-thumbnail item-start>
@@ -99,7 +99,7 @@
 </ion-list>
 
 
-<ion-list *ngSwitchCase="ducklings">
+<ion-list *ngSwitchCase="duck">
 
   <ion-item>
     <ion-thumbnail item-start>
