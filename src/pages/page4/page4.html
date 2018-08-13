@@ -33,7 +33,7 @@
 
 <ion-content padding>
   <div [ngSwitch]="pet">
-    <ion-list *ngSwitchCase="pup">
+    <ion-list *ngSwitchCase="'pup'">
 
       <ion-item>
         <ion-thumbnail item-start>
@@ -66,7 +66,7 @@
     </ion-list>
 <!--  -->
 
-<ion-list *ngSwitchCase="kit">
+<ion-list *ngSwitchCase="'kit'">
 
   <ion-item>
     <ion-thumbnail item-start>
@@ -99,7 +99,7 @@
 </ion-list>
 
 
-<ion-list *ngSwitchCase="duck">
+<ion-list *ngSwitchCase="'duck'">
 
   <ion-item>
     <ion-thumbnail item-start>
