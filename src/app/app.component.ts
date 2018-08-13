@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { Page1Page } from '../pages/page1/page1';
 import { Page2Page } from '../pages/page2/page2';
 import { Page3Page } from '../pages/page3/page3';
+import { Page4Page } from '../pages/page4/page4';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +29,8 @@ export class MyApp {
       { title: 'List', component: ListPage },
       { title: 'Buttons', component: Page1Page },
       { title: 'Alerts!', component: Page2Page },
-      { title: 'Gestures', component: Page3Page}
+      { title: 'Gestures', component: Page3Page },
+      { title: 'Segment', component: Page4Page }
     ];
 
   }
