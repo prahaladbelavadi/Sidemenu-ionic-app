@@ -22,17 +22,17 @@ export class Page5Page {
 
     this.chats = [
       {
-        img: './assets/avatar-cher.png',
+        img: './assets/imgs/user_profiles/avatar-cher.png',
         name: 'Cher',
         message: 'Ugh. As if.',
         time: '9:38 pm'
       }, {
-        img: './assets/avatar-dionne.png',
+        img: './assets/imgs/user_profiles/avatar-dionne.png',
         name: 'Dionne',
         message: 'Mr. Hall was way harsh.',
         time: '8:59 pm'
       }, {
-        img: './assets/avatar-murray.png',
+        img: './assets/imgs/user_profiles/avatar-murray.png',
         name: 'Murray',
         message: 'Excuse me, "Ms. Dione."',
         time: 'Wed'
