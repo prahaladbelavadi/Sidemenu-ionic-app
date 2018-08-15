@@ -81,18 +81,18 @@ export class Page5Page {
   //   this.expandAction(item, 'downloading', 'Login was downloaded');
   // }
 
-  expandAction(item: ItemSliding, _: any, text: string){
-    // do actions
-    setTimeout(()=>{
-    const toast = this.toastCtrl.create({
-      message: text
-    });
-    toast.present();
-    item.close()
-
-    setTimeout(()=> toast.dismiss(), 2000);
-  }, 1500);
-  }
+  // expandAction(item: ItemSliding, _: any, text: string){
+  //   // do actions
+  //   setTimeout(()=>{
+  //   const toast = this.toastCtrl.create({
+  //     message: text
+  //   });
+  //   toast.present();
+  //   item.close()
+  //
+  //   setTimeout(()=> toast.dismiss(), 2000);
+  // }, 1500);
+  // }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Page5Page');
