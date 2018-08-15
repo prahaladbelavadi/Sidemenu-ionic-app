@@ -57,29 +57,29 @@ export class Page5Page {
           username: 'administrator',
       }];
   }
-
-  more(item: ItemSliding){
-    console.log('More');
-    item.close()
-  }
-
-  delete(item: ItemSliding){
-    console.log('Delete')
-    item.close()
-  }
-
-  mute(item: ItemSliding){
-    console.log('mute')
-    item.close()
-  }
-
-  archive(item: ItemSliding){
-    this.expandAction(item, 'archivng','Chat was archived')
-  }
-
-  download(item: ItemSliding){
-    this.expandAction(item, 'downloading', 'Login was downloaded');
-  }
+  //
+  // more(item: ItemSliding){
+  //   console.log('More');
+  //   item.close()
+  // }
+  //
+  // delete(item: ItemSliding){
+  //   console.log('Delete')
+  //   item.close()
+  // }
+  //
+  // mute(item: ItemSliding){
+  //   console.log('mute')
+  //   item.close()
+  // }
+  //
+  // archive(item: ItemSliding){
+  //   this.expandAction(item, 'archivng','Chat was archived')
+  // }
+  //
+  // download(item: ItemSliding){
+  //   this.expandAction(item, 'downloading', 'Login was downloaded');
+  // }
 
   expandAction(item: ItemSliding, _: any, text: string){
     // do actions
