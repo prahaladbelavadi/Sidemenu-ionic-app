@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the Page6Page page.
@@ -15,8 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Page6Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {}
+    topToast() {
+      const toast = this.toastCtrl.create({
+        message: 'Button was clicked',
+        duration: 300
+      });
+      toast.present()
+    }
+
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Page6Page');
