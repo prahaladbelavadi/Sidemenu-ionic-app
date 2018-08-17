@@ -16,7 +16,10 @@
 
 <ion-content padding>
 
-  <button ion-button color="light" (click)="topToast()">Toast</button>
+  <button ion-button color="light" block rounded (click)="topToast()"> Top Toast</button>
+  <button ion-button color="dark" block rounded (click)="showToast('middle')"> Middle Toast</button>
+  <button ion-button color="light" block rounded (click)="bottomToast()"> Bottom Toast</button>
+  <button ion-button color="dark" block rounded (click)="longToast()"> Long custom Toast</button>
 
 
 </ion-content>
