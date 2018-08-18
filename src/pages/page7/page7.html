@@ -13,7 +13,32 @@
   </ion-navbar>
 </ion-header>
 
-
 <ion-content padding>
+  <div>
+    <ion-navbar no-border-bottom>
+      <ion-title> Basic Searchbar</ion-title>
+    </ion-navbar>
 
+    <ion-toolbar no-border-top>
+      <ion-searchbar placeholder="Filter Items" (ionInput)="filterItems($event)"></ion-searchbar>
+    </ion-toolbar>
+
+  </div>
+  <!-- </ion-content> -->
+
+<!-- <ion-content padding> -->
+  <div padding>
+  <ion-searchbar placeholder="Filter Items with Cancel" showCancelButton color="danger" (ionInput)="filterItems($event)"></ion-searchbar>
+  <ion-list>
+    <div *ngFor="let item of items">
+      {{ item }}
+    </div>
+  </ion-list>
+</div>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-searchbar placeholder="Search" (ionInput)="filterItems($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-footer>
