@@ -38,7 +38,7 @@ export class MyApp {
       { title: 'Sliding lists', component: Page5Page },
       { title: 'Toasts', component: Page6Page },
       { title: 'Search Bar', component: Page7Page},
-      { title: 'Miscellaneous', component: Page8Page}
+      { title: 'Misc', component: Page8Page}
     ];
 
   }
