@@ -12,6 +12,7 @@ import { Page4Page } from '../pages/page4/page4';
 import { Page5Page } from '../pages/page5/page5';
 import { Page6Page } from '../pages/page6/page6';
 import { Page7Page } from '../pages/page7/page7';
+import { Page8Page } from '../pages/page8/page8';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -27,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Page4Page,
     Page5Page,
     Page6Page,
-    Page7Page
+    Page7Page,
+    Page8Page
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Page4Page,
     Page5Page,
     Page6Page,
-    Page7Page
+    Page7Page,
+    Page8Page
   ],
   providers: [
     StatusBar,

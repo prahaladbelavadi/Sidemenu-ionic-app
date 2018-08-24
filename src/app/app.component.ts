@@ -12,6 +12,7 @@ import { Page4Page } from '../pages/page4/page4';
 import { Page5Page } from '../pages/page5/page5';
 import { Page6Page } from '../pages/page6/page6';
 import { Page7Page } from '../pages/page7/page7';
+import { Page8Page } from '../pages/page8/page8';
 
 @Component({
   templateUrl: 'app.html'
@@ -36,7 +37,8 @@ export class MyApp {
       { title: 'Segment', component: Page4Page },
       { title: 'Sliding lists', component: Page5Page },
       { title: 'Toasts', component: Page6Page },
-      { title: 'Search Bar', component: Page7Page}
+      { title: 'Search Bar', component: Page7Page},
+      { title: 'Miscellaneous', component: Page8Page}
     ];
 
   }
