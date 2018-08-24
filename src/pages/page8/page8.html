@@ -5,14 +5,86 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>page8</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Miscellaneous</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
+  <ion-item>
+    <ion-icon name="logo-twitter" item-start></ion-icon>
+    Twitter Badge
+    <ion-badge item-end>260k</ion-badge>
+  </ion-item>
+
+<div class="check-box">
+      <ion-item>
+        <ion-label>Check Box one</ion-label>
+        <ion-checkbox color="primary" checked="true"></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Check Box Two</ion-label>
+        <ion-checkbox color="secondary" checked="true"></ion-checkbox>
+      </ion-item>
+</div>
+
+<div class="radiobutton">
+    <ion-item>
+      <ion-label>
+          <ion-list radio-group>
+            <ion-list-header>
+              Radio Button
+            </ion-list-header>
+
+            <ion-item>
+              <ion-label>Ionic</ion-label>
+              <ion-radio checked="true" value="ionic"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>React</ion-label>
+              <ion-radio value="react"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Android</ion-label>
+              <ion-radio value="Android" disabled="true"></ion-radio>
+            </ion-item>
+          </ion-list>
+      </ion-label>
+    </ion-item>
+</div>
+
+<div class="range">
+  <ion-label>Range</ion-label>
+  <ion-item>
+    <ion-range>
+      <ion-icon range-left small name="partly-sunny"></ion-icon>
+      <ion-icon range-right name="sunny"></ion-icon>
+    </ion-range>
+  </ion-item>
+</div>
+
+
+<div class="toggle">
+  <ion-label>Toggle</ion-label>
+  <ion-item>
+    <ion-label>
+      Turn WIFI On/Off
+      <ion-icon name="wifi"></ion-icon>
+    </ion-label>
+    <ion-toggle checked="True"></ion-toggle>
+  </ion-item>
+</div>
+
+<div class="loading">
+<button ion-button block round color="secondary" (click)="presentLoading()">
+Button to show loading action
+</button>
+</div>
 
 </ion-content>
